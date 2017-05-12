@@ -69,7 +69,7 @@ img{
 img:hover{
 	width: 28em;
 	height: 28em;
-	margin-right: 0;
+/* 	margin-right: 0; */
 }
 
 .main > section:nth-child(even) {
