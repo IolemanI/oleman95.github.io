@@ -1,0 +1,32 @@
+body, html {font-size: 100%; padding: 0; margin: 0;}
+
+a{
+  color: #006699;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  text-decoration: none !important;
+}
+
+.welcome {
+  float: right;
+  width: 77%;
+  padding: 260px 80px;
+  position: relative;
+  background: url(../resources/7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+
+}
+div{
+  display: block;
+}
+
+
+@media screen and (max-width: 55em) {
+
+}
