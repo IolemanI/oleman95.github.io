@@ -1,0 +1,130 @@
+.cbp-af-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #546e7a;
+	z-index: 10000;
+	height: 118px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+.cbp-af-header .cbp-af-inner {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+}
+
+.cbp-af-inner h1,
+.cbp-af-inner nav{
+	display: inline-block;
+	position: relative;
+}
+
+
+.cbp-af-inner h1,
+.cbp-af-inner nav{
+	line-height: 107px;
+}
+
+.cbp-af-inner h1{
+	text-transform: uppercase;
+	color: #fafafa;
+	letter-spacing: 4px;
+	font-size: 4em;
+	margin: 0;
+	margin-top: 4px;
+	float: left;
+}
+
+.cbp-af-inner nav{
+	text-transform: uppercase;
+	color: #333;
+	letter-spacing: 4px;
+	/*font-size: 4em;*/
+	margin: 0;
+}
+
+.cbp-af-header nav a {
+	/*color: #aaa;*/
+	font-weight: 700;
+	margin: 0 0 0 20px;
+	font-size: 1.4em;
+}
+.cbp-af-header nav a:first-child {
+	margin: 0 0 0 0px;
+}
+
+.cbp-af-header nav a:hover {
+	color: #333;
+}
+
+
+ /*Example Media Queries */
+@media screen and (max-width: 55em) {
+
+	.cbp-af-header .cbp-af-inner {
+		width: 100%;
+	}
+
+	.cbp-af-header h1 {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 2em;
+		float: none;
+	}
+
+	.cbp-af-header nav a {
+		font-size: 1em;
+	}
+	.cbp-af-header h1 {
+		line-height: 140px;
+	}
+
+	.cbp-af-inner nav {
+    line-height: 40px;
+	}
+
+	/*.cbp-af-header .cbp-af-header-shrink h1 {
+		line-height: 45px;
+	}
+	.cbp-af-header .cbp-af-header-shrink h1 {
+		font-size: 2em;
+	}*/
+}
+
+
+@media screen and (max-width: 30em) {
+	.cbp-af-header nav a,
+	.cbp-af-header.cbp-af-header-shrink nav a {
+		/*line-height: 2;*/
+	}
+	.cbp-af-header h1 {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 2em;
+		letter-spacing:normal;
+		float: none;
+	}
+
+	.cbp-af-header .cbp-af-inner {
+		width: 90%;
+		max-width: 69em;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.cbp-af-inner h1{
+		line-height: 60px;
+	}
+
+	.cbp-af-inner nav{
+		font-size: 0.5em;
+		line-height: 30px;
+	}
+}
