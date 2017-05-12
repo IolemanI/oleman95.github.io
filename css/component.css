@@ -67,7 +67,7 @@
  /*Example Media Queries */
 @media screen and (max-width: 55em) {
 
-	.cbp-af-header .cbp-af-inner {
+	/*.cbp-af-header .cbp-af-inner {
 		width: 100%;
 	}
 
@@ -88,7 +88,7 @@
 
 	.cbp-af-inner nav {
     line-height: 40px;
-	}
+	}*/
 
 	/*.cbp-af-header .cbp-af-header-shrink h1 {
 		line-height: 45px;

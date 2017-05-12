@@ -109,12 +109,26 @@ img:hover{
 		float: none;
 		margin: auto;
 		margin-right: 15%;
+		margin-top: 1%;
 		border: 4px solid #263238;
 	}
 
 	img:hover{
-		width: 18em;
-		height: 18em;
-	 	margin-right: 0;
-	}
+    -webkit-animation: cssAnimation 1.3565s 1 ease;
+    -moz-animation: cssAnimation 1.3565s 1 ease;
+    -o-animation: cssAnimation 1.3565s 1 ease;
+
+  }
+  @-webkit-keyframes cssAnimation {
+  from { -webkit-transform: scale(0.8); }
+  to { -webkit-transform: scale(1.00); }
+  }
+  @-moz-keyframes cssAnimation {
+  from { -moz-transform: scale(0.8); }
+  to { -moz-transform: scale(1.00); }
+  }
+  @-o-keyframes cssAnimation {
+  from { -o-transform: scale(0.8); }
+  to { -o-transform: scale(1.00); }
+  }
 }
