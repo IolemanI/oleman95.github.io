@@ -104,11 +104,11 @@ img:hover{
 @media screen and (max-width: 55em) {
 	img{
 		display: block;
-		width: 100px;
-		height: 100px;
+		width: 16em;
+		height: 16em;
 		float: none;
 		margin: auto;
-		margin-right: 26%;
+		margin-right: 15%;
 		border: 4px solid #263238;
 	}
 
