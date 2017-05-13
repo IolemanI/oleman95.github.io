@@ -13,6 +13,7 @@
 }
 .welcome{
 	padding: 250px 180px;
+	padding-right: 60px;
 	position: relative;
 	background: url(../resources/9.jpeg);
 	background-repeat: no-repeat;
@@ -96,27 +97,38 @@ ul{
     font-size: 21px;
 }
 
-.main-navigation li a.active{
+.main-navigation li a:hover{
+	background: #495461;
+
+}
+
+.main-navigation li a:active{
 	background: #495461;
 }
 
 .download p{
-	float: right;
 	font-size: 21px;
 }
 .download_img{
-	float: left;
+	margin-right: 10px;
 	width: 28px;
 }
 .download:hover{
 	cursor: pointer;
 }
 .download{
-	padding-right: 115px;
+	padding-right: 20px;
 	padding-left: 35px;
 	padding-top: 0px;
 	padding-bottom: 35px;
 	margin-top: 40px;
+
+	display: flex ;
+	flex-direction: row ;
+	flex-wrap: wrap ;
+	justify-content: flex-start ;
+	align-items: center ;
+	align-content: center ;
 }
 .fluid_container{
 	padding: 0 80px;
