@@ -95,49 +95,38 @@
 	margin: 30px 0;
 }
 
-
-
-
-
-.main_navigation li a {
-    padding: 15px 40px;
-    display: block;
-    color: white;
-    font-size: 21px;
-}
-
-a:hover{
-	background: #505c6b;
-
-}
-
-a:active{
-	background: #495461;
-}
-
-.download p{
-	font-size: 21px;
-}
-.download_img{
-	margin-right: 10px;
-	width: 28px;
-}
-.download:hover{
-	cursor: pointer;
-}
-.download{
-	padding-right: 20px;
-	padding-left: 35px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin-top: 40px;
-
+.main_navigation li{
 	display: flex ;
 	flex-direction: row ;
 	flex-wrap: wrap ;
 	justify-content: flex-start ;
 	align-items: center ;
 	align-content: center ;
+}
+
+.navigation_img {
+	width: 30px;
+	margin-left: 40px;
+}
+
+.main_navigation li a {
+    padding: 15px 40px;
+		padding-left: 15px;
+    display: block;
+    color: white;
+    font-size: 21px;
+}
+
+.main_navigation li:hover{
+	background: #505c6b;
+}
+
+.main_navigation li:active{
+	background: #495461;
+}
+
+.download{
+	margin-top: 65%;
 }
 .fluid_container{
 	padding: 0 80px;
