@@ -7,7 +7,7 @@
 	color: white;
 	overflow-y: hidden;
 }
-.welcome, .about_me, .my_skils, .edu, .exp{
+.welcome, .main_content{
 	float: right;
 	width: 77%;
 }
@@ -99,6 +99,66 @@ ul{
 .main-navigation li a.active{
 	background: #495461;
 }
+
+.download p{
+	float: right;
+	font-size: 21px;
+}
+.download_img{
+	float: left;
+	width: 28px;
+}
+.download:hover{
+	cursor: pointer;
+}
+.download{
+	padding-right: 115px;
+	padding-left: 35px;
+	padding-top: 0px;
+	padding-bottom: 35px;
+	margin-top: 40px;
+}
+.fluid_container{
+	padding: 0 80px;
+}
+.page_selection{
+	padding-top: 80px;
+}
+.row{
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-md-12{
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
+
+	/*-webkit-box-shadow: 2px 3px 11px 2px #8C8C8C;
+	box-shadow: 2px 3px 11px 2px #8C8C8C;*/
+}
+
+.col-md-12 h4{
+	font-size: 22px;
+	font-family: 'robotold';
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+.col-md-12 h5{
+	font-size: 19px;
+}
+
+.col-md-11 ul{
+	float: left;
+}
+.col-md-11 div{
+	float: right;
+}
+
+
+
 
 
 /*--------------------
