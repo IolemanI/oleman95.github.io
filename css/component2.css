@@ -182,9 +182,20 @@
 	.download{
 		margin: 0;
 	}
-	.navigations{
+
+	.navigations li:not(.download){
 		display: none;
 	}
+	.navigation_img{
+		margin-left: 13px;
+	}
+	.main_navigation li a{
+		padding-left: 5px;
+	}
+	.main_navigation{
+		margin-top: 0;
+	}
+
 	.top_selection{
 		padding: 20px;
 	}
