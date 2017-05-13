@@ -1,3 +1,11 @@
+body{
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  font-family: 'roboregular';
+  overflow-x: hidden;
+}
+
 body, html {font-size: 100%; padding: 0; margin: 0;}
 
 a{
@@ -10,20 +18,17 @@ a{
   text-decoration: none !important;
 }
 
-.welcome {
-  float: right;
-  width: 77%;
-  padding: 260px 80px;
-  position: relative;
-  background: url(../resources/7.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 2;
-
-}
 div{
   display: block;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: 500;
+  line-height: 1.1;
 }
 
 
