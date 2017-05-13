@@ -7,18 +7,6 @@
 	color: white;
 	overflow-y: hidden;
 }
-@media screen and (max-width: 1290px){
-	.side_bar {
-	  overflow-y: scroll;
-	  width: 30%;
-	}
-}
-
-@media (max-width: 991px) and (min-width: 768px){
-	.side_bar {
-	  display: none;
-	}
-}
 
 .welcome, .main_content{
 	float: right;
@@ -169,13 +157,33 @@
 
 
 
+@media screen and (max-width: 1290px){
+	.side_bar {
+	  overflow-y: scroll;
+	  width: 30%;
+	}
+	.welcome, .main_content{
+		width: 70%;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.side_bar {
+	  display: none;
+	}
+	.welcome, .main_content{
+		width: 100%;
+	}
+}
 
-
-/*--------------------
-Shadow for block div
-----------------------*/
-.effect1{
-	-webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;
+@media screen and (max-width: 720px){
+	.side_bar {
+		display: none;
+	}
+	.welcome, .main_content{
+		width: 100%;
+		float: none;
+	}
+	.welcome{
+		padding: 65px 65px;
+	}
 }
