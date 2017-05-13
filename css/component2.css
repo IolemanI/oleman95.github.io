@@ -187,10 +187,6 @@
 	/*.navigations li:not(.download){
 		display: none;
 	}*/
-
-	.navigations li{
-		display: none;
-	}
 	.navigation_img{
 		margin-left: 13px;
 	}
@@ -199,6 +195,7 @@
 	}
 	.main_navigation{
 		margin-top: 0;
+		display: none;
 	}
 
 	.top_selection{
