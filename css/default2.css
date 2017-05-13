@@ -20,7 +20,7 @@ a{
 }
 mark{
   color: #353d46;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);;
   font-size: 19px;
 }
 
