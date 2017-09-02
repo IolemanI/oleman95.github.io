@@ -1,0 +1,147 @@
+#welcome, #main_content{
+	float: right;
+	width: 77%;
+}
+#welcome{
+	padding: 250px 180px;
+	padding-right: 60px;
+	position: relative;
+	background: url(../resources/9.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: 2;
+}
+#welcome_text{
+	position: relative;
+	z-index: 4;
+}
+#welcome_text h2{
+	color: white;
+	font-size: 57px;
+	font-family: 'robotobold';
+	margin-bottom: 30px;
+}
+#welcome_text h5{
+	font-size: 22px;
+	color: white;
+}
+#overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(95, 109, 126, 0.4);
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+hr{
+  position: relative;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  height: 4px;
+  background: #dddddd;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+#fluid_container{
+	padding: 0 80px;
+	padding-top: 80px;
+    font-size: 15px;
+}
+#fluid_container div{
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 20px;
+    margin-right: -15px;
+	margin-left: -15px;
+}
+#fluid_container h4{
+    font-size: 22px;
+	font-family: 'robotold';
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+#my_skills div{
+    padding-top: 0;
+}
+#download{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: 0px;
+    top: -45px;
+    z-index:1;
+}
+#download a {
+    color: white;
+}
+#download button{
+    background-color: #5f6d7e;
+    padding: 8px 20px;
+    border-style: hidden;
+    border-radius: 0px;
+    box-shadow: 1px 1px 3px 0px #000000;
+}
+#download button:active{
+	background: #495461;
+    box-shadow: 1px 1px 5px 0px #000000;
+}
+
+#fluid_container #divForm{
+    height: auto;
+    width: 450px;
+    background-color: #5f6d7e;
+    padding: 20px 16px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea{
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    padding: 4px;
+}
+input:focus, textarea:focus {
+  border-color: darkslategrey;
+}
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+#divForm h3{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#divForm div{
+    width: 100px;
+    margin: 0 auto;
+}
+#divForm button{
+    background-color: lightslategrey;
+    padding: 8px 20px;
+    border-style: hidden;
+    border-radius: 0px;
+    box-shadow: 1px 1px 3px 0px #000000;
+    color: white;
+    font-size: 18px;
+}
+#divForm button:active{
+    background: #495461;
+    box-shadow: 1px 1px 5px 0px #000000;
+}
