@@ -1,11 +1,13 @@
 #side_bar{
+/*    display: none;*/
 	float: left;
-	width: 23%;
+	width: 15%;
 	height: 100%;
 	position: fixed;
 	background-color: #5f6d7e;
 	color: white;
 	overflow-y: hidden;
+    z-index: 4;
 }
 
 #top_selection{
