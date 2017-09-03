@@ -1,7 +1,6 @@
 #side_bar{
-/*    display: none;*/
 	float: left;
-	width: 15%;
+	width: 300px;
 	height: 100%;
 	position: fixed;
 	background-color: #5f6d7e;
@@ -9,28 +8,16 @@
 	overflow-y: hidden;
     z-index: 4;
 }
-#top_selection{
-	padding: 40px;
-}
-#top_selection h3{
-    margin-bottom: 5px;
-    color: white;
-    font-size: 22px;
-    font-family: 'robotobold';
-}
-#top_selection div{
-	width: 150px;
-	height: 150px;
-	border: 2px solid white;
-	overflow: hidden;
-	margin-bottom: 20px;
-}
-#top_selection div img {
-    width: 100%;
-}
 
-#main_navigation{
-	margin: 30px 0;
+#main_navigation img{
+	width: 30px;
+	margin-left: 40px;
+}
+#main_navigation a {
+    padding: 15px 40px;
+    padding-left: 15px;
+    color: white;
+    font-size: 21px;
 }
 #main_navigation li{
 	display: flex;
@@ -40,22 +27,54 @@
 	align-items: center;
 	align-content: center;
 }
-#main_navigation img{
-	width: 30px;
-	margin-left: 40px;
-}
-#main_navigation a {
-    padding: 15px 40px;
-    padding-left: 15px;
-    display: block;
-    color: white;
-    font-size: 21px;
-}
 #main_navigation li:hover{
 	background: #505c6b;
 }
 #main_navigation li:active{
 	background: #495461;
+}
+#main_navigation li:first-of-type img{
+    margin-left: 40px;
+    
+}
+#main_navigation li:first-of-type{
+    display: none;
+    background: #505c6b;
+}
+#profileItem{
+    padding: 20px 0;
+}
+
+#top_img{
+    width: 90px;
+    height: 90px;
+    border: 2px solid white;
+    overflow: hidden;
+    margin-left: 16px;
+}
+#top_img img{
+    width: 90px;
+    margin-left: 0;
+}
+#top_txt{
+    width: 150px;
+    height: 90px;
+    margin-left: 10px;
+}
+#top_txt h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: 'robotobold';
+}
+#top_txt p{
+    margin-bottom: px;
+    margin-left: 10px;
+    color: white;
+    font-size: 14px;
+    font-family: 'robotobold';
 }
 
 #menu{
@@ -65,11 +84,10 @@
     display: none;
 }
 
-@media screen and (max-width: 1475px) {
+@media screen and (max-width: 1500px) {
     
     #side_bar{
         display: none;
-        width: 30%;
     }
     #menu{
         display: block;
@@ -77,49 +95,15 @@
         top: 0;
         left: 0;
         z-index: 7;
-        margin: 16px;
     }
-    #hideMenu{
-        width: 10px;
-        height: 10px;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 7;
-        margin: 16px;
+    #menu img:hover{
+        background-color: rgba(125,125,125,0.64);
     }
-    #main_navigation a{
-        font-size: 30px;
-        padding: 18px 40px;
-        padding-left: 20px;
+    #menu img{
+        padding: 8px;
+
     }
-    #main_navigation img{
-        width: 35px;
-    }
-    #top_selection h3{
-        font-size: 29px;
-    }
-    #top_selection p{
-        font-size: 16px;
-    }
-    #top_selection{
-        padding-top: 80px;
-    }
-    #top_selection #hideMenu{
-	width: 50px;
-	height: 50px;
-	border: 0 solid white;
-	margin-bottom: 0;
-    }
-    #top_selection div{
-	width: 150px;
-	height: 150px;
-	border: 2px solid white;
-	-webkit-border-radius: 0;
-	border-radius: 0;
-	overflow: hidden;
-	margin-bottom: 20px;
-}
-    
+    #main_navigation li:first-of-type{
+        display:flex;
+    } 
 }

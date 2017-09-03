@@ -1,4 +1,4 @@
-function btnSend(){
+function btnSend() {
 //    document.getElementById("");
     var name = document.getElementById("nameInp").value;
     var email = document.getElementById("emailInp").value;
@@ -27,7 +27,7 @@ function btnSend(){
 function mouseEnter(){
     setTimeout(incrHeight, 200);
     function incrHeight(){
-        console.log('mouse over');
+//        console.log('mouse over');
         var i = 0,
             delay = 3,
             startTimer = function () {
@@ -46,7 +46,7 @@ function mouseEnter(){
     }
 }
 function mouseLeave(){
-    console.log('mouse leave');
+//    console.log('mouse leave');
     var i = 0,
         delay = 5,
         startTimer = function () {
@@ -77,7 +77,6 @@ function showBtns(height){
         button2.style.display = 'none';
     }
 }
-
 function showEmailForm(){
     var form = document.getElementById('divForm');
     form.style.display = 'block';
@@ -94,20 +93,23 @@ function aboutMeBtn(){
     
     colorChange(aboutMeFld);
     
+    hideMenuBtn();
 }
 function mySkillsBtn(){
     var mySkillsFld = document.getElementById('my_skills');
     
     colorChange(mySkillsFld);
+    hideMenuBtn();
 }
 function eduBtn(){
     var eduFld = document.getElementById('edu');
     colorChange(eduFld);
-
+    hideMenuBtn();
 }
 function expBtn(){
     var expFld = document.getElementById('exp');
     colorChange(expFld);
+    hideMenuBtn();
 }
 function colorChange(elem){
     elem.style.backgroundColor = 'gainsboro';
@@ -134,14 +136,22 @@ function colorChange(elem){
 }
 
 //burger menu and side bar
-
+var hideCount = false;
 function openMenuBtn(){
     var sideBar = document.getElementById('side_bar');
-    
+    hideCount = false;
     sideBar.style.display = 'block';
 }
 function hideMenuBtn(){
     var sideBar = document.getElementById('side_bar');
     
     sideBar.style.display = 'none';
+    hideCount = true;
+}
+
+window.onresize = function(){
+
+    if(window.innerWidth < 1500){
+        hideMenuBtn();
+    }else openMenuBtn();
 }
