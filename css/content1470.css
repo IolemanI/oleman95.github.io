@@ -1,12 +1,2 @@
-@media screen and (min-width:200px) and (max-width:1024px) {
-    
-    #side_bar{
-        display: none;
-    }
-    
-    #welcome, #main_content{
-        width: 100%;
-    }
-    
-}
+
     

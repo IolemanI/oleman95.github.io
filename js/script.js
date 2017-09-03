@@ -132,3 +132,16 @@ function colorChange(elem){
     
 
 }
+
+//burger menu and side bar
+
+function openMenuBtn(){
+    var sideBar = document.getElementById('side_bar');
+    
+    sideBar.style.display = 'block';
+}
+function hideMenuBtn(){
+    var sideBar = document.getElementById('side_bar');
+    
+    sideBar.style.display = 'none';
+}

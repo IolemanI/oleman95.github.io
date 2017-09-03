@@ -1,9 +1,10 @@
+
 #welcome, #main_content{
 	float: right;
 	width: 85%;
 }
 #welcome{
-	padding: 250px 180px;
+	padding: 250px 20%;
 	padding-right: 60px;
 	position: relative;
 	background: url(../resources/9.jpeg);
@@ -167,3 +168,13 @@ textarea {
     float: left;
     margin-left: 50px;
 }
+
+@media screen and (max-width: 1475px) {
+    #welcome, #main_content{
+        width: 100%;
+    }
+}
+
+
+
+
