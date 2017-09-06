@@ -7,7 +7,7 @@
 	padding: 250px 20%;
 	padding-right: 60px;
 	position: relative;
-	background: url(../resources/9.jpeg);
+	background: url(../resources/9-min.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -74,99 +74,33 @@ hr{
     margin-bottom: 170px;
 }
 
-#tele-block{
-    position: relative;
-    background-color: white;
-    box-shadow: 1px 1px 2px 1px #666;
-    left: 0px;
-    top: -1px;
-    z-index:1;
-}
-#tele-block a {
-    color:dimgray;
-}
-#tele-block button{
-    position: relative;
-    background-color:gainsboro;
-    padding: 8px 20px;
-    border-style: hidden;
-    box-shadow: 1px 1px 1px 0px #666;
-    margin-left: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-#tele-block div{
-    display: none;
-}
-#tele-block button:active{
-	background: #444;
-    box-shadow: 1px 1px 5px 0px #666;
-}
-
-#divForm{
-    height: auto;
-    width: 450px;
-    background-color: white;;
-    box-shadow: 1px 1px 10px 1px #666;
-    padding: 20px 26px;
+#btnsRow{
     position: fixed;
-    display:none;
-    top:40%;
-    left: 40%;
-    z-index: 5;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(95, 109, 126, 0.9);
+    z-index: 8;
 }
-label {
-    color: dimgray;
-    font-size: 20px;
-    display: inline-block;
-    width: 90px;
-    text-align: left;
-}
-input, textarea{
-    width: 300px;
-    box-sizing: border-box;
-    border: 1px solid #999;
-    padding: 4px;
-}
-input:focus, textarea:focus {
-  border-color: darkslategrey;
-}
-textarea {
-  vertical-align: top;
-  height: 5em;
-}
-#divForm h3{
-    color: dimgray;
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 8px;
-}
-#divForm div{
-    width: 100px;
-    display: inline;
-}
-#divForm a{
-    color: dimgray;
-}
-#divForm button{
+#downloadBtn{
     position: relative;
-    background-color:gainsboro;
+    top: 10px;
+    left: 20%;
+    background-color: rgba(95, 109, 126, 1);
     padding: 8px 20px;
     border-style: hidden;
     box-shadow: 1px 1px 1px 0px #666;
-    margin-top: 16px;
+    border: 1px solid white;
 }
-#divForm button:active{
-    background: #495461;
-    box-shadow: 1px 1px 5px 0px #000000;
+#downloadBtn:hover{
+    background-color: rgba(125,125,125,0.64);
 }
-#btnSend{
-    float: right;
-    margin-right: 50px;
+#downloadBtn a{
+    color: white;
 }
-#btnCansel{
-    float: left;
-    margin-left: 50px;
+#downloadBtn a:hover{
+    cursor:default;
 }
 
 @media screen and (max-width: 1500px) {

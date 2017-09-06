@@ -11,31 +11,6 @@
 		<link rel="stylesheet" type="text/css" href="css/content.css" />
 	</head>
 	<body>
-        <div id="divForm">
-            <form action="">
-            <h3>Contact me</h3>
-                <table>
-                    <tr>
-                        <td><label for="name">Name:     </label></td>
-                        <td><input type="text" id="nameInp" placeholder="John Smith"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Email: </label></td>
-                        <td><input type="text" id="emailInp" placeholder="johnsmith@your.mail"></td>
-                    </tr>
-                    <tr>
-                        <td id="message"><label for="msgInp" >Message: </label></td>
-                        <td><textarea id="msgInp" placeholder="Text..."></textarea></td>
-                    </tr>
-                </table>
-            </form>
-            <div id="btnCansel">
-                <button onclick="hideEmailForm()"><a>Cansel</a></button>
-            </div>
-            <div id="btnSend">
-                <button type="submit" onclick="btnSend()"><a>Send</a></button>
-            </div>
-        </div>
 
 		<div id="side_bar">
 			<div id="main_navigation">
@@ -46,7 +21,7 @@
 					</li>
 					<li id="profileItem">				
                         <div id="top_img">
-                        <img src="resources\profile_photo.jpeg" alt="profile_picture">
+                        <img src="resources\profile_photo-min.jpeg" alt="profile_picture">
                         </div>
                         <div id="top_txt">
     				    <h3>Manachynskyi Oleksii</h3>
@@ -77,29 +52,21 @@
 
 		<div id="welcome">
 			<div id="overlay"></div>
-			<div id="menu" onclick="openMenuBtn()">
-			    <img src="resources/menu2.png" alt="menu">
+			<div id="btnsRow">
+                <div id="menu" onclick="openMenuBtn()">
+                    <img src="resources/menu2.png" alt="menu">
+                </div>
+                <button id="downloadBtn">
+                 <a href="resources\CV_Manachynskyi_Oleskii.pdf" download>Download CV</a>
+                </button>			    
 			</div>
 			<div id="welcome_text">
 				<h2>Hello!</h2>
 				<h5>Welcome to my personal Web site.</h5>
 			</div>
-
 		</div>
 
-		<div id="main_content" onmouseenter="mouseEnter()"
-           onmouseleave="mouseLeave()">
-            <div id="tele-block">
-                <div id="button1">
-                  <button id="downloadBtn">
-                      <a href="resources\CV_Manachynskyi_Oleskii.pdf" download>Download CV</a>
-                  </button>
-                </div>
-                <div id="button2">
-                  <button id="sendEmailBtn" onclick="showEmailForm()"><a>Send Email</a></button>
-                </div>
-                    
-            </div>
+		<div id="main_content">
 			<div id="fluid_container">
 
 				<div id="about_me">

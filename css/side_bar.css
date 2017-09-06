@@ -79,6 +79,7 @@
 
 #menu{
     display: none;
+    z-index: 8;
 }
 #hideMenu{
     display: none;
@@ -100,7 +101,7 @@
         background-color: rgba(125,125,125,0.64);
     }
     #menu img{
-        padding: 8px;
+        padding: 12px;
 
     }
     #main_navigation li:first-of-type{
