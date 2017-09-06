@@ -46,7 +46,7 @@ function colorChange(elem){
 
 }
 
-//burger menu and side bar
+//row in the top and side bar
 var hideCount = false;
 function openMenuBtn(){
     var sideBar = document.getElementById('side_bar');
@@ -65,4 +65,17 @@ window.onresize = function(){
     if(window.innerWidth < 1500){
         hideMenuBtn();
     }else openMenuBtn();
+}
+
+function facebook(){
+    window.location = 'https://www.facebook.com/lmanacinskij';
+}
+function instagram(){
+    window.location = 'https://www.instagram.com/lmanachinskiy';
+}
+function github(){
+    window.location = 'https://github.com/OleMan95';
+}
+function linkedin(){
+    window.location = 'https://www.linkedin.com/in/oleksii-manachynskyi-078b17137/';
 }
