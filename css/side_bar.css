@@ -29,6 +29,7 @@
 }
 #main_navigation li:hover{
 	background: #505c6b;
+    transition: 0.5s all;
 }
 #main_navigation li:active{
 	background: #495461;
@@ -99,6 +100,7 @@
     }
     #menu img:hover{
         background-color: rgba(125,125,125,0.64);
+        transition: 0.5s all;
     }
     #menu img{
         padding: 12px;
