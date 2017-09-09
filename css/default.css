@@ -40,10 +40,11 @@ a{
     cursor: default;
 }
 div{
-  display: block;
+    display: block;
 }
 mark{
-  color: #353d46;
-  background-color: rgba(255, 255, 255, 0);;
-  font-size: 16px;
+    color: #353d46;
+    background-color: rgba(255, 255, 255, 0);;
+    font-size: 16px;
+    margin-right: 16px;
 }
