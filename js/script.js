@@ -49,15 +49,19 @@ function colorChange(elem){
 //row in the top and side bar
 var hideCount = false;
 function openMenuBtn(){
-    var sideBar = document.getElementById('side_bar');
     hideCount = false;
-    sideBar.style.display = 'block';
+    document.getElementById('side_bar').style.width = '300px';
+    document.getElementById('welcome').style.position = 'absolute';
+    document.getElementById('welcome').style.left = '300px';
+    document.getElementById('main_content').style.left = '300px';
+    
 }
 function hideMenuBtn(){
     var sideBar = document.getElementById('side_bar');
-    
-    sideBar.style.display = 'none';
     hideCount = true;
+    sideBar.style.width = 0;
+    document.getElementById('welcome').style.left = '0';
+    document.getElementById('main_content').style.left = '0';
 }
 
 window.onresize = function(){
@@ -101,7 +105,7 @@ function handleTouchMove(evt){
     var diffX = downX - upX;
     var diffY = downY - upY;
     
-    if(diffX < 0 && diffX < -130){ //swipe left
-       openMenuBtn();
+    if(diffX < 0 && diffX < -130){ //swipe left        
+        openMenuBtn();
        }
 }

@@ -1,6 +1,12 @@
 #welcome, #main_content{
 	float: right;
 	width: calc(100% - 300px);
+    position:absolute;
+    left: 0;
+    transition: all 0.5s;
+}
+#main_content{
+    top: 616px;
 }
 #welcome{
 	padding: 250px 20%;
@@ -47,8 +53,7 @@ hr{
   margin-bottom: 0;
 }
 #fluid_container{
-	padding: 0 80px;
-	padding-top: 80px;
+	padding: 80px 80px;
     font-size: 15px;
 }
 #fluid_container div{
@@ -68,9 +73,6 @@ hr{
 }
 #my_skills div{
     padding-top: 0;
-}
-#exp{
-    margin-bottom: 170px;
 }
 
 #btnsRow{

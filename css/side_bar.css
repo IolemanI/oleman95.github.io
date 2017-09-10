@@ -5,8 +5,9 @@
 	position: fixed;
 	background-color: #5f6d7e;
 	color: white;
-	overflow-y: hidden;
+	overflow-x: hidden;
     z-index: 8;
+    transition: all 0.5s;
 }
 
 #main_navigation img{
@@ -20,6 +21,7 @@
     font-size: 21px;
 }
 #main_navigation li{
+    width: 300px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -89,7 +91,7 @@
 @media screen and (max-width: 1500px) {
     
     #side_bar{
-        display: none;
+        width: 0;
     }
     #menu{
         display: block;

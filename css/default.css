@@ -1,8 +1,9 @@
 body{
+    width: 320px;
     line-height: 24px;
     color: #777777;
     font-family: 'roboregular';
-    overflow-x: hidden;
+    overflow: hidden;
 }
 body, html {
     padding: 0;
