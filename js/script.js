@@ -79,3 +79,29 @@ function github(){
 function linkedin(){
     window.location = 'https://www.linkedin.com/in/oleksii-manachynskyi-078b17137/';
 }
+
+//touch events
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+var downX = null;
+var downY = null;
+
+function handleTouchStart(evt){
+    downX = evt.touches[0].clientX;
+    downY = evt.touches[0].clientY;
+}
+function handleTouchMove(evt){
+    if(!downX||!downY){
+       return;
+       }
+    var upX = evt.touches[0].clientX;
+    var upY = evt.touches[0].clientY;
+    
+    var diffX = downX - upX;
+    var diffY = downY - upY;
+    
+    if(diffX < 0 && diffX < -130){ //swipe left
+       openMenuBtn();
+       }
+}
