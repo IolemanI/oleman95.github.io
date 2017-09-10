@@ -38,11 +38,11 @@
 }
 #main_navigation li:first-of-type img{
     margin-left: 40px;
-    
 }
 #main_navigation li:first-of-type{
     display: none;
     background: #505c6b;
+    height: 60px;
 }
 #profileItem{
     padding: 20px 0;

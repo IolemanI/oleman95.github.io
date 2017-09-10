@@ -50,18 +50,11 @@ function colorChange(elem){
 var hideCount = false;
 function openMenuBtn(){
     hideCount = false;
-    document.getElementById('side_bar').style.width = '300px';
-    document.getElementById('welcome').style.position = 'absolute';
-    document.getElementById('welcome').style.left = '300px';
-    document.getElementById('main_content').style.left = '300px';
-    
+    document.getElementById('side_bar').style.width = '300px';    
 }
 function hideMenuBtn(){
-    var sideBar = document.getElementById('side_bar');
     hideCount = true;
-    sideBar.style.width = 0;
-    document.getElementById('welcome').style.left = '0';
-    document.getElementById('main_content').style.left = '0';
+    document.getElementById('side_bar').style.width = 0;
 }
 
 window.onresize = function(){
