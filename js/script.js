@@ -101,4 +101,5 @@ function handleTouchMove(evt){
     if(diffX < 0 && diffX < -130){ //swipe left        
         openMenuBtn();
        }
+    if(diffX > 0 && diffX > 130) hideMenuBtn();
 }
