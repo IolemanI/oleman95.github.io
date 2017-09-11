@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Manachynskyi Oleksii</title>
-		<script src="js/script.js"></script>
+		<script src="js/script.js" defer></script>
+		<script src="js/email_form.js" defer></script>
 		<link rel="stylesheet" type="text/css" href="css/side_bar.css" />
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/content.css" />
@@ -16,134 +17,164 @@
 			<div id="main_navigation">
 				<ul>
 					<li onclick="hideMenuBtn()">
-                       <img src="resources\menu_close.png" class="navigation_img">
-                       <a href="#welcome">close</a>
+						<img src="resources\menu_close.png" class="navigation_img">
+            <a href="#welcome">close</a>
 					</li>
-					<li id="profileItem">				
-                        <div id="top_img">
-                        <img src="resources\profile_photo-min.jpeg" alt="profile_picture">
-                        </div>
-                        <div id="top_txt">
-    				    <h3>Manachynskyi Oleksii</h3>
-	    			    <p>My personal page</p>	   
-				        </div>
+					<li id="profileItem">
+						<div id="top_img">
+							<img src="resources\profile_photo-min.jpeg" alt="profile_picture">
+            </div>
+						<div id="top_txt">
+    				  <h3>Manachynskyi Oleksii</h3>
+	    			  <p>My personal page</p>
+				    </div>
 					</li>
 					<li>
-                       <img src="resources\2.png" class="navigation_img">
-                       <a href="#welcome">Welcome</a>
+						<img src="resources\2.png" class="navigation_img">
+            <a href="#welcome">Welcome</a>
 					</li>
 					<li id="aboutMeBtn" onclick="aboutMeBtn()">
-					    <img src="resources\1.png" class="navigation_img">
+					  <img src="resources\1.png" class="navigation_img">
 						<a href="#about_me">About me</a>
 					</li>
 					<li id="mySkillsBtn" onclick="mySkillsBtn()">
-					    <img src="resources\3.png" class="navigation_img">
+					  <img src="resources\3.png" class="navigation_img">
 						<a href="#my_skills">My skills</a></li>
 					<li id="eduBtn" onclick="eduBtn()">
-					    <img src="resources\4.png" class="navigation_img">
+					  <img src="resources\4.png" class="navigation_img">
 						<a href="#edu">Education</a></li>
 					<li id="expBtn" onclick="expBtn()">
-					    <img src="resources\5.png" class="navigation_img">
+					  <img src="resources\5.png" class="navigation_img">
 						<a href="#exp">Experience</a>
 				    </li>
 				</ul>
 			</div>
 		</div>
-        <div>
-            <div id="welcome">
-                <div id="overlay"></div>
-                <div id="btnsRow">
-                    <div id="menu" onclick="openMenuBtn()">
-                        <img src="resources/menu2.png" alt="menu">
-                    </div>
-                    <div>
-                       <button id="downloadBtn">
-                        <a href="resources\CV_Manachynskyi_Oleskii.pdf" download>Download CV</a>
-                        </button>
-                    </div>
-                    <div id="social_networks">
-                        <img src="resources/share.png" alt="social_networks" id="social_img">
-                        <div id="facebook" onclick="facebook()">
-                            <img src="resources/facebook.png" alt="facebook">
-                        </div>
-                        <div id="instagram" onclick="instagram()">
-                            <img src="resources/instagram.png" alt="instagram">
-                        </div>	
-                        <div id="github" onclick="github()">
-                            <img src="resources/github.png" alt="github">
-                        </div>		
-                        <div id="linkedin" onclick="linkedin()">
-                            <img src="resources/linkedin.png" alt="linkedin">
-                        </div>
-                    </div>
-
-                </div>
-                <div id="welcome_text">
-                    <h2>Hello!</h2>
-                    <h5>Welcome to my personal Web site.</h5>
-                </div>
+		<div>
+			<div id="welcome">
+				<div id="overlay"></div>
+				<div id="btnsRow">
+					<div id="menu" onclick="openMenuBtn()">
+						<img src="resources/menu2.png" alt="menu">
+					</div>
+					<div>
+						<button id="downloadBtn">
+							<a href="resources\CV_Manachynskyi_Oleskii.pdf" download>Download CV</a>
+            </button>
+          </div>
+          <div id="social_networks">
+            <img src="resources/share.png" alt="social_networks" id="social_img">
+            <div id="facebook" onclick="facebook()">
+              <img src="resources/facebook.png" alt="facebook">
             </div>
-            <div id="main_content">
-                <div id="fluid_container">
-                    <div id="about_me">
-                        <h4>Learn about me:</h4>
-                        <ul>
-                            <li><mark>Name: </mark> Oleksii</li>
-                            <li><mark>Surname: </mark> Manachynskyi</li>
-                            <li><mark>Date of birth: </mark> 30th March 1995</li>
-                            <li><mark>Marital status: </mark> Single</li>
-                            <li><mark>Email: </mark> aom-95@live.com</li>
-                            <li><mark>Phone: </mark> +380731343161</li>
-                            <li><mark>Skype: </mark> manachinskiy3</li>
-                        </ul>
-                        <hr>
-                    </div>
-                    <div id="my_skills">
-                        <h4>Special skills:</h4>
-                        <ul>
-                            <li><mark>Russian - </mark> native</li>
-                            <li><mark>Ukranian - </mark> native</li>
-                            <li><mark>English - </mark> intermediate</li>
-                            <li><mark>Polish - </mark> basic</li>
-                            <li><mark>German - </mark> basic</li>
-                            </ul>
-
-                        <div>
-                            <p><mark>Programs: </mark> Android Studio, GitHub, Git Bash, Intellij IDEA, YouTrack, Redmine, TestLink, Trello</p>
-                        </div>
-
-                        <div>
-                            <p><mark>Programming languages: </mark> Java Syntax, Java Core, JUnit, MySQL, SQLite, JavaScript, Initial JQuery, HTML5, CSS3</p>
-                        </div>
-                        <hr>
-                    </div>
-                    <div id="edu">
-                        <h4>Education:</h4>
-                        <ul>
-                            <li><mark>2017 - up to now</mark> (master's degree)</li>
-                            <li>Vinnitsa National Technical University, department of Information Technology and Computer Engineering, direction - Computer science, speciality - Systems of artificial intelligence</li>
-                            <li><mark>2014 - 2017</mark> (bachalors degree)<br/></li>
-                            <li>Vinnitsa National Technical University, department of Infocommunications, and nanosystems, speciality - Telecommunications</li>
-                            <li><mark>2010 - 2014</mark> (junior specialict)<br/></li>
-                            <li>Vinnitsa Technical College, Design, production and technical maintenance of radio engineering devices.</li>
-                        </ul>
-                        <hr>
-                    </div>
-                    <div id="exp">
-                        <h4>Work experience:</h4>
-                        <ul>
-                            <li><mark>Ltd “Tiras-12”, March 2016 – May 2017.</mark></li>
-                            <li>Vinnitsa, Ukraine.</li>
-                            <li> - Performance testing of the security alarm systems with Web-servers and mobile on iOS and Android OS;</li>
-                            <li> - Testing configuration of the security alarm systems;</li>
-                            <li> - Testing of communication between the security devise, Web-server, android-application and iOS-application;</li>
-                            <li> - Writing and editing technical documentation.</li>
-                        </ul>
-                        <hr>
-                    </div>		    
-                </div>
+            <div id="instagram" onclick="instagram()">
+              <img src="resources/instagram.png" alt="instagram">
             </div>
+            <div id="github" onclick="github()">
+              <img src="resources/github.png" alt="github">
+            </div>
+            <div id="linkedin" onclick="linkedin()">
+              <img src="resources/linkedin.png" alt="linkedin">
+            </div>
+          </div>
+
         </div>
+        <div id="welcome_text">
+          <h2>Hello!</h2>
+          <h5>Welcome to my personal Web site.</h5>
+        </div>
+      </div>
+      <div id="main_content">
+        <div id="fluid_container">
+          <div id="about_me">
+            <h4>Learn about me:</h4>
+            <ul>
+	            <li><mark>Name: </mark> Oleksii</li>
+	            <li><mark>Surname: </mark> Manachynskyi</li>
+	            <li><mark>Date of birth: </mark> 30th March 1995</li>
+	            <li><mark>Marital status: </mark> Single</li>
+	            <li><mark>Email: </mark> aom-95@live.com</li>
+	            <li><mark>Phone: </mark> +380731343161</li>
+	            <li><mark>Skype: </mark> manachinskiy3</li>
+            </ul>
+            <hr>
+          </div>
+          <div id="my_skills">
+						<h4>Special skills:</h4>
+						<ul>
+							<li><mark>Russian - </mark> native</li>
+							<li><mark>Ukranian - </mark> native</li>
+							<li><mark>English - </mark> intermediate</li>
+							<li><mark>Polish - </mark> basic</li>
+							<li><mark>German - </mark> basic</li>
+						</ul>
+						<div>
+							<p><mark>Programs: </mark> Android Studio, GitHub, Git Bash, Intellij IDEA, YouTrack, Redmine, TestLink, Trello</p>
+						</div>
+						<div>
+							<p><mark>Programming languages: </mark> Java Syntax, Java Core, JUnit, MySQL, SQLite, JavaScript, Initial JQuery, HTML5, CSS3</p>
+						</div>
+						<hr>
+          </div>
+          <div id="edu">
+						<h4>Education:</h4>
+						<ul>
+							<li><mark>2017 - up to now</mark> (master's degree)</li>
+							<li>Vinnitsa National Technical University, department of Information Technology and Computer Engineering, direction - Computer science, speciality - Systems of artificial intelligence</li>
+							<li><mark>2014 - 2017</mark> (bachalors degree)<br/></li>
+							<li>Vinnitsa National Technical University, department of Infocommunications, and nanosystems, speciality - Telecommunications</li>
+							<li><mark>2010 - 2014</mark> (junior specialict)<br/></li>
+							<li>Vinnitsa Technical College, Design, production and technical maintenance of radio engineering devices.</li>
+						</ul>
+						<hr>
+          </div>
+					<div id="exp">
+						<h4>Work experience:</h4>
+						<ul>
+							<li><mark>Ltd “Tiras-12”, March 2016 – May 2017.</mark></li>
+							<li>Vinnitsa, Ukraine.</li>
+							<li> - Performance testing of the security alarm systems with Web-servers and mobile on iOS and Android OS;</li>
+							<li> - Testing configuration of the security alarm systems;</li>
+							<li> - Testing of communication between the security devise, Web-server, android-application and iOS-application;</li>
+							<li> - Writing and editing technical documentation.</li>
+						</ul>
+						<hr>
+          </div>
+					<div id="email_form">
+						<form id="form">
+							<!-- <table>
+								<tr>
+									<td><label for="name">Name: </label></td>
+				          <td><input type="text" id="nameInp" placeholder="John Smith" required></td>
+				        </tr>
+				        <tr>
+				          <td><label for="email">Email: </label></td>
+				          <td><input type="text" id="emailInp" placeholder="johnsmith@your.email" required></td>
+				        </tr>
+				        <tr>
+				          <td id="message"><label for="msgInp" >Message: </label></td>
+				          <td><textarea id="msgInp" placeholder="Message..." required></textarea></td>
+				        </tr>
+								<tr>
+									<td></td>
+								</tr>
+				      </table> -->
+							<label for="name">Name: </label>
+							<input type="text" id="nameInp" placeholder="Enter your name" required>
+							<br/>
+							<label for="email">Email: </label>
+							<input type="text" id="emailInp" placeholder="here_is@your.email" required>
+							<br/>
+							<label for="msgInp" >Message: </label>
+							<textarea id="msgInp" placeholder="Message..." required></textarea>
+							<br/>
+							<button type="submit" name="button">Send</button>
+						</form>
+          </div>
+        </div>
+      </div>
+    </div>
 
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	</body>
 </html>

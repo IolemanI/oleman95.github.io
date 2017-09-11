@@ -1,14 +1,14 @@
 //side bar buttons
 function aboutMeBtn(){
     var aboutMeFld = document.getElementById('about_me');
-    
+
     colorChange(aboutMeFld);
-    
+
     hideMenuBtn();
 }
 function mySkillsBtn(){
     var mySkillsFld = document.getElementById('my_skills');
-    
+
     colorChange(mySkillsFld);
     hideMenuBtn();
 }
@@ -24,25 +24,25 @@ function expBtn(){
 }
 function colorChange(elem){
     elem.style.backgroundColor = 'gainsboro';
-    
+
     setTimeout(flip,100);
     function flip(){
         console.log('1');
         elem.style.backgroundColor = 'white';
-       
+
         setTimeout(flip1,100);
         function flip1(){
             console.log('2');
             elem.style.backgroundColor = 'gainsboro';
-            
+
             setTimeout(flip2,100);
             function flip2(){
                 console.log('3');       elem.style.backgroundColor = 'white';
             }
         }
     }
-    
-    
+
+
 
 }
 
@@ -50,7 +50,7 @@ function colorChange(elem){
 var hideCount = false;
 function openMenuBtn(){
     hideCount = false;
-    document.getElementById('side_bar').style.width = '300px';    
+    document.getElementById('side_bar').style.width = '300px';
 }
 function hideMenuBtn(){
     hideCount = true;
@@ -94,11 +94,11 @@ function handleTouchMove(evt){
        }
     var upX = evt.touches[0].clientX;
     var upY = evt.touches[0].clientY;
-    
+
     var diffX = downX - upX;
     var diffY = downY - upY;
-    
-    if(diffX < 0 && diffX < -130){ //swipe left        
+
+    if(diffX < 0 && diffX < -130){ //swipe left
         openMenuBtn();
        }
     if(diffX > 0 && diffX > 130) hideMenuBtn();
