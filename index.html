@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Manachynskyi Oleksii</title>
+		<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js" defer></script>
 		<script src="js/script.js" defer></script>
 		<script src="js/email_form.js" defer></script>
 		<link rel="stylesheet" type="text/css" href="css/side_bar.css" />
@@ -141,40 +142,24 @@
 						<hr>
           </div>
 					<div id="email_form">
+						<h4>Contact me:</h4>
+						<p id="formAlert">Message has been sent!</p>
 						<form id="form">
-							<!-- <table>
-								<tr>
-									<td><label for="name">Name: </label></td>
-				          <td><input type="text" id="nameInp" placeholder="John Smith" required></td>
-				        </tr>
-				        <tr>
-				          <td><label for="email">Email: </label></td>
-				          <td><input type="text" id="emailInp" placeholder="johnsmith@your.email" required></td>
-				        </tr>
-				        <tr>
-				          <td id="message"><label for="msgInp" >Message: </label></td>
-				          <td><textarea id="msgInp" placeholder="Message..." required></textarea></td>
-				        </tr>
-								<tr>
-									<td></td>
-								</tr>
-				      </table> -->
 							<label for="name">Name: </label>
-							<input type="text" id="nameInp" placeholder="Enter your name" required>
+							<input type="text" id="nameInp" placeholder="Enter your name">
 							<br/>
 							<label for="email">Email: </label>
-							<input type="text" id="emailInp" placeholder="here_is@your.email" required>
+							<input type="email" id="emailInp" placeholder="here_is@your.email">
 							<br/>
 							<label for="msgInp" >Message: </label>
-							<textarea id="msgInp" placeholder="Message..." required></textarea>
+							<textarea id="msgInp" placeholder="Message..."></textarea>
 							<br/>
-							<button type="submit" name="button">Send</button>
+							<button type="button" name="button" onclick="submitClick()">Send</button>
 						</form>
           </div>
         </div>
       </div>
     </div>
 
-		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	</body>
 </html>
