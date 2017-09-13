@@ -37,3 +37,42 @@ function writeUserData(name, email, message) {
     message: message
   });
 }
+
+/*Client id. Save to database the ID of client browser.*/
+var clientID;
+var clientCount;
+var clientStringId;
+var date = Date.parse(new Date());
+var random = parseInt(Math.random() * 1000);
+
+if(localStorage.getItem('clientID')==null) {
+	// console.log('clientID == null');
+	clientID = random+'d'+date; //clientID is random number and current time in Unix
+	localStorage.setItem('clientID', clientID);
+	clientCount = 1;
+	writeClientID(clientID, clientCount);
+}else {
+	clientID = localStorage.getItem('clientID');
+	clientStringId = 'clientID_' + clientID;
+	// console.log(clientStringId);
+	checkClientCount();
+}
+
+function checkClientCount() {
+  var clientRef = firebase.database().ref('visitors').child(clientStringId).child('clientCount');
+	clientRef.once('value').then(function(snapshot) {
+    var count = (snapshot.val());
+		count++;
+		writeClientID(clientID, count);
+  });
+}
+
+function writeClientID(clientID, clientCount) {
+	clientStringId = 'clientID_' + clientID;
+	// console.log(clientCount);
+  firebase.database().ref('visitors').child(clientStringId).set({
+    clientID: clientID,
+		clientCount: clientCount,
+		time: date
+  });
+}

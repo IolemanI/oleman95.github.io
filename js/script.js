@@ -120,7 +120,6 @@ document.getElementById('welcomeBtn').onclick = function(){
   //window.scrollTo(0,0);
   scrollToTop();
 }
-
 function scrollToTop(){
   if(scrolled>0){
     window.scrollTo(0,scrolled);
