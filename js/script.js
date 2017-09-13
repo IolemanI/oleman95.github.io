@@ -103,3 +103,24 @@ function handleTouchMove(evt){
        }
     if(diffX > 0 && diffX > 130) hideMenuBtn();
 }
+
+/*Scrolling to top by tapping on welcomeBtn */
+var scrolled;
+var timer;
+
+document.getElementById('welcomeBtn').onclick = function(){
+  scrolled = window.pageYOffset;
+  //window.scrollTo(0,0);
+  scrollToTop();
+}
+
+function scrollToTop(){
+  if(scrolled>0){
+    window.scrollTo(0,scrolled);
+    scrolled -= 70; //scrolling speed
+    timer = setTimeout(scrollToTop, 30);
+  }else{
+    clearTimeout(timer);
+    window.scrollTo(0,0);
+  }
+}
