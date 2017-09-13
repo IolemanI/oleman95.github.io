@@ -3,24 +3,31 @@ function aboutMeBtn(){
     var aboutMeFld = document.getElementById('about_me');
 
     colorChange(aboutMeFld);
-
-    hideMenuBtn();
+    if(window.innerWidth < 1500){
+        hideMenuBtn();
+    }
 }
 function mySkillsBtn(){
     var mySkillsFld = document.getElementById('my_skills');
 
     colorChange(mySkillsFld);
-    hideMenuBtn();
+    if(window.innerWidth < 1500){
+      hideMenuBtn();
+    }
 }
 function eduBtn(){
     var eduFld = document.getElementById('edu');
     colorChange(eduFld);
-    hideMenuBtn();
+    if(window.innerWidth < 1500){
+        hideMenuBtn();
+    }
 }
 function expBtn(){
     var expFld = document.getElementById('exp');
     colorChange(expFld);
-    hideMenuBtn();
+    if(window.innerWidth < 1500){
+        hideMenuBtn();
+    }
 }
 function colorChange(elem){
     elem.style.backgroundColor = 'gainsboro';
