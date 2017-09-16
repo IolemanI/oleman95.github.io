@@ -9,11 +9,14 @@ var config = {
 };
 firebase.initializeApp(config);
 
+
 //on send button click
 function submitClick(){
-  var name = document.getElementById('nameInp').value;
-  var email = document.getElementById('emailInp').value;
-  var message = document.getElementById('msgInp').value;
+	var name = document.getElementById('nameInp').value;
+	var email = document.getElementById('emailInp').value;
+	var message = document.getElementById('msgInp').value;
+
+	checkValues(name, message);
 
   writeUserData(name, email, message);
 
@@ -75,4 +78,10 @@ function writeClientID(clientID, clientCount) {
 		clientCount: clientCount,
 		time: date
   });
+}
+
+function checkValues(name, message){
+	if (name == 'command open' && message == 'test') {
+		window.location = 'hidden/test.html';
+	}
 }
