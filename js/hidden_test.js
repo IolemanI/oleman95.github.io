@@ -10,7 +10,7 @@ var flegmatik = 0;
 var melanholik = 0;
 var questionCount = 1;
 
-document.getElementById('startBtn').onclick = function() {
+document.getElementById('startDiv').onclick = function() {
 	beginTest();
 };
 nextBtn.onclick = function() {
@@ -19,21 +19,13 @@ nextBtn.onclick = function() {
 
 function beginTest() {
 	var startBtn = document.getElementById('startBtn');
+	var startDiv = document.getElementById('startDiv');
 	var question = document.getElementById('question');
 	var nextBtn = document.getElementById('nextBtn');
 	var main = document.getElementById('main');
 
-	// var pos = 0;
-	// var id = setInterval(frame, 10);
-	// function frame() {
-	//   if (pos == -1750) {
-	//     clearInterval(id);
-	//   } else {
-	//     pos -= 70;
-	//     startBtn.style.left = pos + 'px';
-	//   }
-	// }
-
+	result.style.display = 'none';
+	startDiv.style.display = 'none';
 	startBtn.style.display = 'none';
 	question.style.display = 'block';
 	nextBtn.style.display = 'block';
