@@ -1,6 +1,9 @@
+body {
+	font-family: Roboto, sans-serif;
+}
 #main{
-  width: 400px;
-  height: 300px;
+  width: 600px;
+  height: 350px;
   margin: 16px auto;
   background-color: white;
   box-shadow: 1px 1px 2px 2px #999;
@@ -15,26 +18,114 @@ h2{
 mark{
   background-color: rgba(255, 255, 255, 0);
   color: #4caf50;
+  margin-right: 8px;
 }
-h3, form{
-  padding: 8px 16px;
-  padding-top: 24px;
-}
-
-#start{
-  display: none;
-}
-input[type="radio"] + label {
+label {
   font: 20px bold;
   color: #444;
   cursor: pointer;
 }
-#next{
-  position: relative;
-  bottom: -50px;
-  left: 280px;
-  padding: 8px 24px;
+button{
+  outline: none;
   background-color: #4caf50;
+  padding: 8px 24px;
   border: 0;
   color: white;
+  padding: 8px 24px;
+
+}
+#nextBtn:hover{
+  background-color: #43a047;
+}
+#nextBtn:active{
+  box-shadow: 1px 1px 2px 1px #999;
+  background-color: #2e7d32;
+}
+#question{
+  display: none;
+  padding: 8px 16px;
+  padding-top: 24px;
+}
+#nextBtn{
+  display: none;
+  float: right;
+  position:sticky;
+  top: 395px;
+  margin-right: 24px;
+  box-shadow: 1px 1px 1px 0px #666;
+}
+
+#startBtn{
+  width: 210px;
+  display: block;
+  position: relative;
+  left: 0;
+  transition: all 0.5s linear;
+  padding: 152px 195px;
+  background-color: #4caf50;
+  font-size: 35px;
+  color: white;
+}
+#startBtn:hover{
+  background-color: #2e7d32;
+  cursor: pointer;
+}
+.radio-btn {
+  position: absolute;
+  visibility: hidden;
+}
+.radio-btn:checked+.label {
+  color: #4caf50;
+}
+.radio-btn:checked+.label::before {
+  margin-right: 20px;
+  border: 3px solid #4caf50;
+  background: #535353;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.list__item {
+  position: relative;
+}
+.list__item:hover label {
+  color: #4caf50;
+}
+.list__item:hover .label::before {
+  border: 3px solid #4caf50;
+  margin-right: 20px;
+}
+
+.label {
+  display: inline-block;
+  align-items: center;
+	padding: 4px;
+	color: #444444;
+	font-size: 20px;
+	font-weight: 300;
+	cursor: pointer;
+	transition: all 0.25s linear;
+}
+.label::before {
+	display: inline-block;
+	content: '';
+	border: 3px solid #4e4e4e;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	margin-right: 10px;
+	transition: all .25s linear;
+}
+
+#result{
+  width: 180px;
+  display: none;
+  position: relative;
+  top: 35%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 300;
 }

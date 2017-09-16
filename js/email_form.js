@@ -16,7 +16,9 @@ function submitClick(){
 	var email = document.getElementById('emailInp').value;
 	var message = document.getElementById('msgInp').value;
 
-	checkValues(name, message);
+	if (checkValues(name, message)) {
+		return;
+	}
 
   writeUserData(name, email, message);
 
@@ -83,5 +85,8 @@ function writeClientID(clientID, clientCount) {
 function checkValues(name, message){
 	if (name == 'command open' && message == 'test') {
 		window.location = 'hidden/test.html';
+		return true;
+	}else {
+		return false;
 	}
 }
