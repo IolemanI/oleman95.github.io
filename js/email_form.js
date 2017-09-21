@@ -9,6 +9,44 @@ var config = {
 };
 firebase.initializeApp(config);
 
+function sendNotify() {
+
+
+	var data =  {
+		"notification":{
+			"title":"MyWEB",
+			"body":"New visitor on your WEB",
+			"sound":"default"
+		},
+   	"to": "dgbRmits3QA:APA91bErD90m7f2i6S2_pnECBsrboSlPMw07xSeAzdZoObssENYo16sJqY2zWe9oHkXRudJ-8u4CtidL2tHiQL4g1DlkcBHjC0wXeIak2_ZrJr_v8NvvQCrTFz9z9wJ4clFdVamyZsxL"
+	};
+
+	var request = new XMLHttpRequest();
+	request.open("POST", "https://fcm.googleapis.com/fcm/send", true);
+	request.setRequestHeader('Content-Type', 'application/json');
+	request.setRequestHeader('Authorization', 'key=AAAA-lA2ZSg:APA91bHd-t8AHbSGBMyYceXlE9Khpl5vPaA_aaxDAr-hfZAJ-sMqJxmoYQBLCMj8OiRmw5hHhMCre_xkF6icrsGNok7F51etpCjPkSqw9JJEPYbpZxb22Dms2LnXBfu3fDMplIKryaXg');
+	request.send(JSON.stringify(data));
+
+
+	// request.onreadystatechange = function() {//Call a function when the state changes.
+	// 	if(request.readyState == 4 && request.status == 200)
+	// 		console.log(request.responseText);
+	// }
+}
+
+sendNotify();
+
+
+
+
+
+
+
+
+
+
+
+
 
 //on send button click
 function submitClick(){
