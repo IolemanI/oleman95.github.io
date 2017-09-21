@@ -36,18 +36,6 @@ function sendNotify(title, message) {
 
 sendNotify("MyWEB","New visitor on your WEB");
 
-
-
-
-
-
-
-
-
-
-
-
-
 //on send button click
 function submitClick(){
 	var name = document.getElementById('nameInp').value;
@@ -58,8 +46,10 @@ function submitClick(){
 		return;
 	}
 
+	var time = Date.parse(new Date())
+
 	sendNotify(name+" - "+email, message);
-  writeUserData(name, email, message);
+  writeUserData(name, email, message, time);
 
 
 	//display alert 'Message has been sent'
@@ -75,11 +65,12 @@ function submitClick(){
 }
 
 //write data into firebase database
-function writeUserData(name, email, message) {
-  firebase.database().ref('messages').child('user_' + name).set({
+function writeUserData(name, email, message, time) {
+  firebase.database().ref('messages').child('user_' + time).set({
     name: name,
     email: email,
-    message: message
+    message: message,
+		timeMessage: time
   });
 }
 
