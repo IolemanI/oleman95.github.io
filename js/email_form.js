@@ -9,13 +9,13 @@ var config = {
 };
 firebase.initializeApp(config);
 
-function sendNotify() {
+function sendNotify(title, message) {
 
 
 	var data =  {
 		"notification":{
-			"title":"MyWEB",
-			"body":"New visitor on your WEB",
+			"title":title,
+			"body":message,
 			"sound":"default"
 		},
    	"to": "dgbRmits3QA:APA91bErD90m7f2i6S2_pnECBsrboSlPMw07xSeAzdZoObssENYo16sJqY2zWe9oHkXRudJ-8u4CtidL2tHiQL4g1DlkcBHjC0wXeIak2_ZrJr_v8NvvQCrTFz9z9wJ4clFdVamyZsxL"
@@ -34,7 +34,7 @@ function sendNotify() {
 	// }
 }
 
-sendNotify();
+sendNotify("MyWEB","New visitor on your WEB");
 
 
 
@@ -58,7 +58,9 @@ function submitClick(){
 		return;
 	}
 
+	sendNotify(name+" - "+email, message);
   writeUserData(name, email, message);
+
 
 	//display alert 'Message has been sent'
 	document.getElementById('formAlert').style.display = 'block';
